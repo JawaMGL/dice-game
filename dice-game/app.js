@@ -53,7 +53,7 @@ btnHold.addEventListener("click", function() {
     scores[activePlayer] = scores[activePlayer] + tempScore;
     document.getElementById("score-" + activePlayer).textContent =
       scores[activePlayer];
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       isGameOver = true;
       document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
       document
