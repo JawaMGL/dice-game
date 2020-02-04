@@ -13,8 +13,8 @@ function initGame() {
   scores = [0, 0];
   // players temp score
   activePlayer = 0;
-  document.getElementById("name-0").textContent = "Player 1";
-  document.getElementById("name-1").textContent = "Player 2";
+  document.getElementById("name-0").textContent = "Тоглогч 1";
+  document.getElementById("name-1").textContent = "Тоглогч 2";
   tempScore = 0;
   // Preparation to starting
   document.getElementById("score-0").textContent = 0;
@@ -55,7 +55,7 @@ btnHold.addEventListener("click", function() {
       scores[activePlayer];
     if (scores[activePlayer] >= 100) {
       isGameOver = true;
-      document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
+      document.getElementById("name-" + activePlayer).textContent = "Ялагч!!!";
       document
         .querySelector(".player-" + activePlayer + "-panel")
         .classList.add("winner");
